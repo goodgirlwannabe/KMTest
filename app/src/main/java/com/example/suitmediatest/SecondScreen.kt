@@ -1,7 +1,6 @@
 package com.example.suitmediatest
 
 import android.content.Intent
-import android.media.Image
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
@@ -19,7 +18,7 @@ class SecondScreen : AppCompatActivity() {
         selectedUserTextView = findViewById(R.id.selected_user_text_view)
 
         val nameFromFirstScreen = intent.getStringExtra("USER_NAME") ?: "Default Name"
-        val selectedUserName = intent.getStringExtra("SELECTED_USER") ?: "No User Selected"
+        val selectedUserName = intent.getStringExtra("SELECTED_USER_NAME") ?: "No User Selected"
 
         nameTextView.text = nameFromFirstScreen
         selectedUserTextView.text = selectedUserName
