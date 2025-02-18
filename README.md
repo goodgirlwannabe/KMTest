@@ -12,18 +12,12 @@ KMTest is an Android application that consists of three screens. The primary fun
 - **Input Fields**: 
   - Two input fields:
     - **Name Input**: For entering the user's name.
-    - **Sentence Input**: For entering the sentence to check for palindrome status.
-
-- **Palindrome Check**:
-  - The application checks if the entered sentence is a palindrome using the following examples:
-    - `isPalindrome("kasur rusak")` -> **true**
-    - `isPalindrome("step on no pets")` -> **true**
-    - `isPalindrome("put it up")` -> **true**
-    - `isPalindrome("suitmedia")` -> **false**
+    - **Palindrome Input**: For entering the sentence to check for palindrome status.
 
 - **Button**:
-  - A button titled **"Check"** below the input fields.
+  - A button titled **"Check"** below the input fields to check palindrome status of Palindrome Input.
   - When clicked, it shows a dialog with the message **"isPalindrome"** if the sentence is a palindrome.
+  - **"Next"** button will save Name Input and navigate to Second Screen
 
 ### 2. Second Screen
 
