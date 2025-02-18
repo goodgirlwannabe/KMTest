@@ -20,7 +20,8 @@
         android:text="Second Screen"
         android:fontFamily="@font/font_poppins"
         android:textStyle="bold"
-        android:textSize="20dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
         app:layout_constraintStart_toEndOf="@id/back_button"
         android:layout_marginTop="25dp"
         android:layout_centerHorizontal="true"
@@ -32,7 +33,8 @@
         android:layout_height="wrap_content"
         android:text="Welcome"
         android:textSize="16sp"
-        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:fontFamily="@font/font_poppins"
         android:layout_below="@id/back_button"
         android:layout_marginTop="16dp" />
 
@@ -43,6 +45,8 @@
         android:text="Name from First Screen"
         android:textSize="18sp"
         android:textStyle="bold"
+        android:textColor="@color/black"
+        android:fontFamily="@font/font_poppins"
         android:layout_below="@id/welcome_text"
         />
 
@@ -50,11 +54,13 @@
         android:id="@+id/selected_user_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Selected User Name"
-        android:textSize="26sp"
         android:layout_below="@id/name_text_view"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="300dp"
+        android:layout_marginTop="222dp"
+        android:text="Selected User Name"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
         />
 
     <Button
@@ -62,8 +68,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="Choose a User"
+        android:text="@string/choose_a_user"
         android:textSize="14sp"
+        android:fontFamily="@font/font_poppins"
         android:textColor="@color/white"
         android:background="@drawable/custom_button"
         android:layout_marginBottom="24dp"

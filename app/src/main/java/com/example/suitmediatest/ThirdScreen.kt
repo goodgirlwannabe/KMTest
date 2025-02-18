@@ -3,6 +3,7 @@ package com.example.suitmediatest
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
+import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -11,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.example.suitmediatest.retrofit.ApiService
 import com.example.suitmediatest.retrofit.UserResponse
+import com.example.suitmediatest.utils.UserAdapter
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import retrofit2.Call
@@ -77,6 +79,12 @@ class ThirdScreen : AppCompatActivity() {
         })
 
         loadUsers()
+
+        val backButton: Button = findViewById(R.id.third_backButton)
+        backButton.setOnClickListener{
+            val intent = Intent(this, SecondScreen::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun loadUsers() {
